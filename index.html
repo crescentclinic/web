@@ -84,20 +84,20 @@
           
         .tabs {
             font-size: 100%;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             display: flex;
             margin: 0%;
         }
           
         .tabs span {
-            background: rgb(0, 0, 0);
-            padding: 10px;
+            background:rgb(255, 255, 255);
+            padding: 5px;
             border: 1px solid rgb(255, 255, 255);
             border-radius: 10px;
         }
           
         .tabs span:hover {
-            background: rgb(102, 102, 102);
+            background: rgb(0, 0, 0);
             cursor: pointer;
             color: white;
         }
@@ -108,11 +108,18 @@
   <center>
   <main>  
   <div class="tabs">
+  <table align="center" style="width:90vw" bgcolor="#000000">
+  <tr>
+ <td>
     <span data-tab-value="#tab_1">Contact</span>
     <span data-tab-value="#tab_2">About</span>
     <span data-tab-value="#tab_3">Notifications</span>
-    <span data-tab-value="#tab_4">Consultation Schedule</span>
-    <span data-tab-value="#tab_5">Consultation Room For Rent</span>
+    <span data-tab-value="#tab_4">Events</span>
+    <span data-tab-value="#tab_5">Consultation Schedule</span>
+    <span data-tab-value="#tab_6">Consultation Room For Rent</span>
+</td>
+</tr>
+    </table>
   </div>
    
   <div class="tab-content">
@@ -169,6 +176,9 @@
         </table>
     </div>
     <div class="tabs__tab" id="tab_4" data-tab-info>
+          <h3>Events</h3>
+    </div>
+    <div class="tabs__tab" id="tab_5" data-tab-info>
       <h3>Consultation Schedule Template</h3>
       <table align="center" style="width:90vw">
         <tr>
@@ -245,7 +255,7 @@
         </tr>        
       </table>
     </div>
-    <div class="tabs__tab" id="tab_5" data-tab-info>
+    <div class="tabs__tab" id="tab_6" data-tab-info>
       <h2>Consultation Room For Rent</h2>
       <h4>For Speciality or Super Speciality Clinics Only</h4>
       <h3>Time Slots Available</h3>
