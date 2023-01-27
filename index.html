@@ -4,163 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crescent Clinic Home Page</title>
-  <h4>Best Viewed In Desktop Mode</h4> 
   <link rel="icon" type="image/x-icon" href="cln1mb.png">
-  <style>
-    h1  {
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 4vw;
-      }
-    h2  {
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 3vw;
-      }
-    h3  {
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 2vw;
-      }
-    h4  {
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 1vw;
-      }
-    h5  {
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 0.5vw;
-      }
-    h6  {
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 0.1vw;
-      }      
-    p   {
-        text-align: center;
-        font-family: courier;
-        font-size: 1vw;
-      }
-    div {
-        text-align: center;
-      }
-      table, td {
-        border: 2px solid black;
-        border-radius: 10px;
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 1.5vw;
-        padding: 5px;
-      } 
-      th {
-        border: 2px solid black;
-        background: rgb(102, 102, 102);
-        border-radius: 10px;
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 1.5vw;
-        padding: 5px;
-      }  
-    body {
-            background: rgb(255, 255, 255);
-        }
-          
-        [data-tab-info] {
-            display: none;
-        }
-          
-        .active[data-tab-info] {
-            display: block;
-        }
-          
-        .tab-content {
-            font-size: 100%;
-            font-family: sans-serif;
-            font-weight: bold;
-            text-align: center;
-            color: rgb(0, 0, 0);
-        }
-          
-        .tabs {
-            font-size: 100%;
-            color: rgb(0, 0, 0);
-            display: flex;
-            margin: 0%;
-        }
-          
-        .tabs span {
-            background:rgb(255, 255, 255);
-            padding: 10px;
-            border: 1px solid rgb(255, 255, 255);
-            border-radius: 10px;
-        }
-          
-        .tabs span:hover {
-            background: rgb(0, 0, 0);
-            cursor: pointer;
-            color: white;
-        }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <center>
+  <header>
+    <div><h6>Best Viewed In Desktop Mode</h6></div>
+  </header>
   <main>  
+
   <div class="tabs">
-  <table align="center" style="width:90vw" bgcolor="#000000">
-  <tr>
- <td>
-    <span data-tab-value="#tab_1">Contact</span>
-    <span data-tab-value="#tab_2">About</span>
-    <span data-tab-value="#tab_3">Notifications</span>
-    <span data-tab-value="#tab_4">Consultation Schedule</span>
-    <span data-tab-value="#tab_5">Consultation Room For Rent</span>
-</td>
-</tr>
+    <table class="tabs-table">
+        <td class="tabs-col">
+          <span data-tab-value="#tab_1">Home</span>
+          <span data-tab-value="#tab_2">Notifications</span>
+          <span data-tab-value="#tab_3">Consultation Schedule</span>
+          <span data-tab-value="#tab_4">Slots And Room Specs</span>
+        </td>
     </table>
   </div>
    
   <div class="tab-content">
+    <p></p>
     <div class="tabs__tab active" id="tab_1" data-tab-info>
-      <header>
+      <div class="container">
+      <div class="image">
         <img src="cln1mb.png" style="width:200px;height:200px;">
-        <h1>Crescent Clinic</h1>
+      </div>
+      <div class="text">
+        <h1 class="text">Crescent Clinic</h1>
+      </div>
+      </div>
         <h3>Chattiparamb, Near Capital Mall, Malappuram, Kerala, Pin 676503</h3>
-
-
-        <table align="center" style="width:90vw">
-          <tr>
-            <td>Phone</td>
-            <td colspan="4">9400268462</td> 
-          </tr>
-          <tr>
-            <td>Mail</td>
-            <td>clinic.crescent@proton.me</td> 
-          </tr>
-          <tr>
-            <td>PGP Fingerprint</td>
-            <td colspan="4">3AFB FFED DC2B 1992 336F 04BB 32FC 753C 0E06 19E7</td> 
-          </tr>
-          <tr>
-            <td><h4><a href="https://www.google.com/maps/place/10%C2%B059'52.1%22N+76%C2%B005'30.6%22E/@10.9977937,76.0912858,249m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x6b2a1eef3ab26f04!8m2!3d10.9977924!4d76.091833" target="_blank">Jump to Google Maps or scan the QR Code for Geolocation</a></h4></td>
-            <td colspan="4"><img src="loc.png" style="width:150px;height:150px;"></td> 
-          </tr>
-        </table>
-       </header>   
+      <table align="center">
+        <tr>
+          <td>Phone</td>
+          <td colspan="4">9400268462</td> 
+        </tr>
+        <tr>
+          <td>Mail</td>
+          <td>clinic.crescent@proton.me</td> 
+        </tr>
+        <tr>
+          <td>PGP Fingerprint</td>
+          <td colspan="4">3AFB FFED DC2B 1992 336F 04BB 32FC 753C 0E06 19E7</td> 
+        </tr>
+        <tr>
+          <td><h4><a href="https://www.google.com/maps/place/10%C2%B059'52.1%22N+76%C2%B005'30.6%22E/@10.9977937,76.0912858,249m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x6b2a1eef3ab26f04!8m2!3d10.9977924!4d76.091833" target="_blank">Jump to Google Maps or scan the QR Code for Geolocation</a></h4></td>
+          <td colspan="4"><img src="loc.png" style="width:150px;height:150px;"></td> 
+        </tr>
+      </table>
+      <p></p>
+      <table class="about-table" align="center">
+          <td class="about-col">Crescent Clinic is strategically established to address regional imbalances in healthcare services and research. Its established by "Dr Sulaikha I MBBS" with the help of her husband "Dr Hydress U MBBS" and Sons "Dr Ajmal U MBBS MD Paediatrics" and "Dr Haseeb U MBBS" along with contribution from families and relatives. Together we thrives to deliver quality and affordable healthcare.</td> 
+      </table>
     </div>
     <div class="tabs__tab" id="tab_2" data-tab-info>
-     <h3>About</h3>
-    <table align="center" style="width:90vw">
-    <tr>     
-          <td text-align="left">Crescent Clinic is strategically established to address regional imbalances in healthcare services and research. It was established by "Dr Sulaikha I MBBS" with the help of her husband "Dr Hydress U MBBS" and Sons "Dr Ajmal U MBBS MD Paediatrics" and "Dr Haseeb U MBBS" along with contribution from families and relatives. Together we thrives to deliver quality and affordable healthcare.<br> May the future shines bright for all.</td> 
-        </tr>
-        </table>
-    </div>
-    <div class="tabs__tab" id="tab_3" data-tab-info>
-          <h3>Notifications</h3>
-      <table align="center" style="width:90vw">
-    <tr>
+      <h3>Notifications</h3>
+      <table align="center">
+        <tr>
           <th>No</th>
           <th>Date</th>
           <th>Notification</th>
@@ -169,14 +72,14 @@
         <tr>
           <td>1</td>
           <td>25-01-2023</td>
-          <td>Notification for availability of Consultation room for rent on a 4 hour timeslot basis for speciality and superspeciality clinics with a total of 3 slots per day. Refer to "Consultation Room For Rent" tab for available slots. Contact Office for further enquiry </td>
+          <td class="notification-col">Notification for availability of Consultation room for rent on a 4 hour timeslot basis for speciality and superspeciality clinics with a total of 3 slots per day. Refer to "Consultation Room For Rent" tab for available slots. Contact Office for further enquiry </td>
           <td>Active</td>
         </tr>
-        </table>
+      </table>
     </div>
-    <div class="tabs__tab" id="tab_4" data-tab-info>
-      <h3>Consultation Schedule Template</h3>
-      <table align="center" style="width:90vw">
+    <div class="tabs__tab" id="tab_3" data-tab-info>
+      <h3>Consultation Schedule Test Template</h3>
+      <table align="center">
         <tr>
           <th>Monday</th>
           <th>Tuesday</th>
@@ -251,11 +154,11 @@
         </tr>        
       </table>
     </div>
-    <div class="tabs__tab" id="tab_5" data-tab-info>
-      <h2>Consultation Room For Rent</h2>
+    <div class="tabs__tab" id="tab_4" data-tab-info>
+      <h2>Slots And Room Specs</h2>
       <h4>For Speciality or Super Speciality Clinics Only</h4>
       <h3>Time Slots Available</h3>
-      <table align="center" style="width:90vw">
+      <table align="center">
         <tr>
           <th>Room</th>
           <th>Monday</th>
@@ -331,13 +234,13 @@
         </tr>
         <tr>
           <th>Consultation Room 7</th>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
         </tr>
         <tr>
           <td colspan="8">01:00PM - 04:00PM</td>
@@ -404,13 +307,13 @@
         </tr>
         <tr>
           <th>Consultation Room 7</th>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
         </tr>
         <tr>
           <td colspan="8">05:00PM - 10:00PM</td>
@@ -477,17 +380,17 @@
         </tr>
         <tr>
           <th>Consultation Room 7</th>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
-          <td bgcolor="#179A64"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
+          <td class="not-available"></td>
         </tr>
       </table>
       <h3>Room Specifications</h3>
-      <table align="center" style="width:90vw">
+      <table align="center">
         <tr>
           <th>Rooms</th>
           <th>Breadth (cm)</th>
@@ -541,16 +444,17 @@
       <h4>Rooms are furnished with table, chair, cupboard, examination table and its stair.</h4>
       <h4>All rooms have wash basin with rooms 3,4,5,6 having attached bathrooms</h4>
       <h4>Amble car parking space available</h4>
-
     </div>
   </div>
   <p></p>
   <p></p>
-</main>  
+</main>
+
 <footer class="footer">
-    <h4>&copy; 2023 Crescent Clinic. All Rights Reserved</h4> 
-  </footer>
-</center>
+  <div>
+    <h5>&copy; 2023 Crescent Clinic. All Rights Reserved</h5> 
+  </div>  
+</footer>
 <script type="text/javascript">
   const tabs = document.querySelectorAll('[data-tab-value]')
   const tabInfos = document.querySelectorAll('[data-tab-info]')
@@ -566,6 +470,6 @@
           target.classList.add('active');
       })
   })
-</script>
+</script> 
 </body>
 </html>
