@@ -31,30 +31,33 @@ div {
     align-items: center;
   }
 table {
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 0.5vw solid black;
+    border-radius: 2vw;
     align-content: center;
     font-family: sans-serif;
     font-size: 1.5vw;
-    padding: 5px;
+    padding: 0.5vw;
     width: 90vw;
   }  
 td {
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 0.5vw solid black;
+    border-radius: 2vw;
     text-align: center;
     font-family: sans-serif;
     font-size: 1.5vw;
-    padding: 5px;
+    padding: 0.5vw;
+    min-width: 5vw;
   }  
 th {
-    border: 2px solid black;
+    border: 0.5vw solid black;
     background: rgb(102, 102, 102);
-    border-radius: 10px;
+    border-radius: 2vw;
     text-align: center;
     font-family: sans-serif;
     font-size: 1.5vw;
-    padding: 5px;
+    padding: 0.5vw;
+    min-width: 5vw;
+
   }     
 body {
         background: rgb(255, 255, 255);
@@ -64,25 +67,12 @@ body {
         display: none;
     }
 
-    .tabs-table {
-        border: 0px solid black;
-        border-radius: 10px;
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 1vw;
-        padding: 5px;
-        width: 90vw;
-      }
-    .tabs-col {
-        border: 0px solid black;      
-      }
-
     .active[data-tab-info] {
         display: block;
     }
       
     .tab-content {
-        font-size: 1vw;
+        font-size: 1.5vw;
         font-family: sans-serif;
         font-weight: bold;
         text-align: center;
@@ -90,17 +80,21 @@ body {
     }
       
     .tabs {
-        font-size: 100%;
-        color: rgb(255, 255, 255);
+        font-size: 3vw;
+        color: rgb(0, 0, 0);
         display: flex;
         margin: 0%;
+
     }
       
     .tabs span {
-        background:rgb(0, 0, 0);
-        padding: 10px;
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 10px;
+      background: rgb(102, 102, 102);
+      padding: 1vw;
+        border: 0.5vw solid rgb(0, 0, 0);
+        border-radius: 2vw;
+        margin: 0.5vw;
+        min-height: 4vw;
+        max-height: 5vw;
     }
       
     .tabs span:hover {
@@ -111,34 +105,34 @@ body {
 
 
     .about-table {
-      border: 2px solid black;
-      border-radius: 10px;
+      border: 0.5vw solid black;
+      border-radius: 2vw;
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
       font-size: 1.5vw;
-      padding: 5px;
+      padding: 0.5vw;
       width: 90vw;
     }
     
     .about-col {
-      border: 2px solid black;
-      border-radius: 10px;
+      border: 0.5vw solid black;
+      border-radius: 2vw;
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
       font-size: 1.5vw;
-      padding: 5px;
+      padding: 0.5vw;
     }
 
     .notification-col {
-      border: 2px solid black;
-      border-radius: 10px;
+      border: 0.5vw solid black;
+      border-radius: 2vw;
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
       font-size: 1.5vw;
-      padding: 5px;
+      padding: 0.5vw;
     }
     .not-available {
     background: rgb(23, 154, 100);
