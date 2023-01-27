@@ -1,30 +1,30 @@
 h1  {
     font-family: sans-serif;
-    font-size: 4vw;
+    font-size: 6vw;
   }
 h2  {
     font-family: sans-serif;
-    font-size: 3vw;
+    font-size: 5vw;
   }
 h3  {
     font-family: sans-serif;
-    font-size: 2vw;
+    font-size: 4vw;
   }
 h4  {
     font-family: sans-serif;
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
 h5  {
     font-family: sans-serif;
-    font-size: 1vw;
+    font-size: 2vw;
   }
 h6  {
     font-family: sans-serif;
-    font-size: 0.8vw;
+    font-size: 1vw;
   }      
 p   {
     font-family: courier;
-    font-size: 1vw;
+    font-size: 2vw;
   }
 div {
     text-align: center;
@@ -35,7 +35,7 @@ table {
     border-radius: 2vw;
     align-content: center;
     font-family: sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 0.5vw;
     width: 90vw;
   }  
@@ -44,7 +44,7 @@ td {
     border-radius: 2vw;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 0.5vw;
     min-width: 5vw;
   }  
@@ -54,7 +54,7 @@ th {
     border-radius: 2vw;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 0.5vw;
     min-width: 5vw;
 
@@ -74,13 +74,14 @@ body {
     .tab-content {
         font-size: 1.5vw;
         font-family: sans-serif;
-        font-weight: bold;
         text-align: center;
         color: rgb(0, 0, 0);
     }
       
     .tabs {
         font-size: 3vw;
+        font-family: sans-serif;
+        font-weight: bold;
         color: rgb(0, 0, 0);
         display: flex;
         margin: 0%;
@@ -93,8 +94,6 @@ body {
         border: 0.5vw solid rgb(0, 0, 0);
         border-radius: 2vw;
         margin: 0.5vw;
-        min-height: 4vw;
-        max-height: 5vw;
     }
       
     .tabs span:hover {
@@ -110,7 +109,7 @@ body {
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
-      font-size: 1.5vw;
+      font-size: 2vw;
       padding: 0.5vw;
       width: 90vw;
     }
@@ -121,7 +120,7 @@ body {
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
-      font-size: 1.5vw;
+      font-size: 2vw;
       padding: 0.5vw;
     }
 
@@ -131,12 +130,11 @@ body {
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
-      font-size: 1.5vw;
+      font-size: 2vw;
       padding: 0.5vw;
     }
     .not-available {
     background: rgb(23, 154, 100);
-
     }
   
      
