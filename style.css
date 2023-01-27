@@ -1,0 +1,153 @@
+h1  {
+    font-family: sans-serif;
+    font-size: 4vw;
+  }
+h2  {
+    font-family: sans-serif;
+    font-size: 3vw;
+  }
+h3  {
+    font-family: sans-serif;
+    font-size: 2vw;
+  }
+h4  {
+    font-family: sans-serif;
+    font-size: 1.5vw;
+  }
+h5  {
+    font-family: sans-serif;
+    font-size: 1vw;
+  }
+h6  {
+    font-family: sans-serif;
+    font-size: 0.8vw;
+  }      
+p   {
+    font-family: courier;
+    font-size: 1vw;
+  }
+div {
+    text-align: center;
+    align-items: center;
+  }
+table {
+    border: 2px solid black;
+    border-radius: 10px;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    padding: 5px;
+    width: 90vw;
+  }  
+td {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    padding: 5px;
+  }  
+th {
+    border: 2px solid black;
+    background: rgb(102, 102, 102);
+    border-radius: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    padding: 5px;
+  }     
+body {
+        background: rgb(255, 255, 255);
+    }
+      
+    [data-tab-info] {
+        display: none;
+    }
+
+    .tabs-table {
+        border: 0px solid black;
+        border-radius: 10px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1vw;
+        padding: 5px;
+        width: 90vw;
+      }
+    .tabs-col {
+        border: 0px solid black;      
+      }
+
+    .active[data-tab-info] {
+        display: block;
+    }
+      
+    .tab-content {
+        font-size: 1vw;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+      
+    .tabs {
+        font-size: 100%;
+        color: rgb(255, 255, 255);
+        display: flex;
+        margin: 0%;
+    }
+      
+    .tabs span {
+        background:rgb(0, 0, 0);
+        padding: 10px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+      
+    .tabs span:hover {
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        color: black;
+    }
+
+
+    .about-table {
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: left;
+      align-content: stretch; 
+      font-family: sans-serif;
+      font-size: 1.5vw;
+      padding: 5px;
+      width: 90vw;
+    }
+    
+    .about-col {
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: left;
+      align-content: stretch; 
+      font-family: sans-serif;
+      font-size: 1.5vw;
+      padding: 5px;
+    }
+
+    .notification-col {
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: left;
+      align-content: stretch; 
+      font-family: sans-serif;
+      font-size: 1.5vw;
+      padding: 5px;
+    }
+    .not-available {
+    background: rgb(23, 154, 100);
+
+    }
+    
+    .container {
+      display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+     
