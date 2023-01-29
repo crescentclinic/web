@@ -135,6 +135,11 @@ body {
     }
     .not-available {
     background: rgb(23, 154, 100);
+
+    }
+    .logo {
+      width:20%;
+      height:auto;
     }
   
      
