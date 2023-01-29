@@ -50,7 +50,7 @@ td {
   }  
 th {
     border: 0.5vw solid black;
-    background: rgb(102, 102, 102);
+    background: rgb(153,153,151);
     border-radius: 2vw;
     text-align: center;
     font-family: sans-serif;
@@ -89,7 +89,7 @@ body {
     }
       
     .tabs span {
-      background: rgb(102, 102, 102);
+      background: rgb(153,153,151);
       padding: 1vw;
         border: 0.5vw solid rgb(0, 0, 0);
         border-radius: 2vw;
@@ -141,5 +141,3 @@ body {
       width:20%;
       height:auto;
     }
-  
-     
