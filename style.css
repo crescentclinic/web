@@ -137,6 +137,25 @@ body {
     background: rgb(23, 154, 100);
 
     }
+    .align-right-col {
+      border: 0.5vw solid black;
+      border-radius: 2vw;
+      text-align: right;
+      align-content: stretch; 
+      font-family: sans-serif;
+      font-size: 2vw;
+      padding: 0.5vw;
+
+    }
+    .align-left-col {
+      border: 0.5vw solid black;
+      border-radius: 2vw;
+      text-align: left;
+      align-content: stretch; 
+      font-family: sans-serif;
+      font-size: 2vw;
+      padding: 0.5vw;
+    }
     .logo {
       width:20%;
       height:auto;
