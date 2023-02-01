@@ -115,7 +115,7 @@ body {
     }
     
     .about-col {
-      border: 0.5vw solid black;
+      border: 0vw solid black;
       border-radius: 2vw;
       text-align: left;
       align-content: stretch; 
@@ -160,3 +160,21 @@ body {
       width:20%;
       height:auto;
     }
+    
+    .datetime {
+      text-align: center;
+      font-size: 2vw;
+      padding: 0.5vw;
+    }
+
+    .align-left-col-noborder {
+      border: 0vw solid black;
+      border-radius: 2vw;
+      text-align: left;
+      align-content: stretch; 
+      font-family: sans-serif;
+      font-size: 2vw;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+    }
+   
