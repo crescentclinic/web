@@ -115,8 +115,7 @@ body {
     }
     
     .about-col {
-      border: 0vw solid black;
-      border-radius: 2vw;
+      border: 0vw;
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
@@ -168,8 +167,7 @@ body {
     }
 
     .align-left-col-noborder {
-      border: 0vw solid black;
-      border-radius: 2vw;
+      border: 0vw;
       text-align: left;
       align-content: stretch; 
       font-family: sans-serif;
