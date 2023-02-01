@@ -7,22 +7,25 @@
   <link rel="icon" type="image/x-icon" href="cln1mb.png">
   <link media="only screen and (max-width: 1024px)"  rel="stylesheet" href="style.css">
   <link media="only screen and (min-width: 1025px)"  rel="stylesheet" href="lapstyle.css">
-
 </head>
 
 <body>
   <header>
   </header>
-  <main>  
+  <main>
+  <div class="datetime">
+    <span id="time"> </span>
+  </div>    
 
   <div class="tabs">
-          <span data-tab-value="#tab_1">Home</span>
-          <span data-tab-value="#tab_2">Notifications</span>
-          <span data-tab-value="#tab_3">OP Time</span>
-          <span data-tab-value="#tab_4">Slots & Room Specs</span>
-      
+    <table align="center"><tr><td class="align-left-col-noborder">  
+      <span data-tab-value="#tab_1">Home</span>
+      <span data-tab-value="#tab_2">Notifications</span>
+      <span data-tab-value="#tab_3">OP Time</span>
+      <span data-tab-value="#tab_4">Slots & Room Specs</span>  
+    </td></tr></table>              
   </div>
-   
+ 
   <div class="tab-content">
     <p></p>
     <div class="tabs__tab active" id="tab_1" data-tab-info>      
@@ -540,6 +543,19 @@ window.onload = function() {
     }
   }
 }
+
+
+var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime;
+
+
+function refreshTime() {
+  const timeDisplay = document.getElementById("time");
+  const dateString = new Date().toLocaleString('en-us', {weekday:"long", day:"numeric", month:"short", year:"numeric", hour:"numeric", minute:"numeric", second:"numeric"});
+  timeDisplay.textContent = dateString;
+}
+  setInterval(refreshTime, 1000);
 
 </script> 
 </body>
