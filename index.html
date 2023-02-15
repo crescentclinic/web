@@ -5,511 +5,517 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crescent Clinic Home Page</title>
   <link rel="icon" type="image/x-icon" href="cln1mb.png">
-  <link media="only screen and (max-width: 1024px)"  rel="stylesheet" href="style.css">
-  <link media="only screen and (min-width: 1025px)"  rel="stylesheet" href="lapstyle.css">
+  <link media="only screen and (max-width: 1024px)"  rel="stylesheet" href="mobileStyle.css">
+  <link media="only screen and (min-width: 1025px)"  rel="stylesheet" href="desktopStyle.css">
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body>
+<body onload="document.getElementById('defaultOpen').click(); cascadeMenu();">
   <header>
   </header>
   <main>
+
   <div class="datetime">
     <span id="time"> </span>
   </div>
-  <div class="tabs">
-    <table align="center"><tr><td class="align-left-col-noborder">  
-      <span data-tab-value="#tab_1">Home</span>
-      <span data-tab-value="#tab_2">Notifications</span>
-      <span data-tab-value="#tab_3">OP Time</span>
-      <span data-tab-value="#tab_4">Lab</span>  
-      <span data-tab-value="#tab_5">Pharmacy</span>   
-    </td></tr></table>              
+  
+  <table class="col-noborder" align="center">
+      <td>
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+          <button class="tablinks" onclick="openTab(event, 'Notifications')">Notifications</button>
+          <button class="tablinks" onclick="openTab(event, 'OP Time')">OP Time</button>
+          <button class="tablinks" onclick="openTab(event, 'Medical Lab')">Medical Lab</button>
+          <button class="tablinks" onclick="openTab(event, 'Pharmacy')">Pharmacy</button>
+        </div>
+
+      </td>
+  </table>
+  
+  
+  <!-- Tab content -->
+  <div id="Home" class="tabcontent" id="defaultOpen">
+    <img class=logo src="cln1mb.png">
+    <h1 class="text">Crescent Clinic</h1>
+    <table align="center">
+    <tr>
+      <td class="about-col" colspan="5">Crescent Clinic is strategically established to address regional imbalances in healthcare services and research. Its established by "Dr Sulaikha I MBBS" with the help of her husband "Dr Hydress U MBBS" and Sons "Dr Ajmal U MBBS MD Paediatrics" and "Dr Haseeb U MBBS" along with suggestions from families and relatives. Together we thrives to deliver quality and affordable healthcare.</td> 
+    </tr>
+    </table>  
+    <h3>Contact Us</h3>
+    <table align="center">
+    <tr>
+      <td>Address</td>
+      <td colspan="4">Crescent Clinic, Chattiparamb <br> Near Capital Mall, Malappuram <br>Kerala Pin 676503</td> 
+     </tr>
+    <tr>
+      <td>Phone</td>
+      <td colspan="4">9400268462</td> 
+    </tr>
+    <tr>
+      <td>Mail</td>
+      <td>clinic.crescent@proton.me</td> 
+    </tr>
+    <tr>
+      <td>PGP Fingerprint</td>
+      <td colspan="4">3AFB FFED DC2B 1992 336F 04BB 32FC 753C 0E06 19E7</td> 
+    </tr>
+    <tr>
+      <td><h5><a href="https://www.google.com/maps/place/10%C2%B059'52.1%22N+76%C2%B005'30.6%22E/@10.9977937,76.0912858,249m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x6b2a1eef3ab26f04!8m2!3d10.9977924!4d76.091833" target="_blank">Jump to Google Maps or scan the QR Code for Geolocation</a></h4></td>
+      <td colspan="4"><img src="loc.png" style="width:20%;height:20%;"></td> 
+    </tr>
+    </table>
+    <h3>Crescent Clinic App</h3>
+    <table align="center">
+    <tr>
+      <td colspan="2"><a href="cc_v0.0.1.apk" download> Download Crescent Clinic Android App Version 0.0.1 Release Date 15-02-2023</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="color:#ff0000">The app can be downloaded only via a browser by visiting <br> https://crescentclinic.github.io/web <br> Verify the authenticity of the downloaded app by matching hash values given below</td>
+    </tr>     
+    <tr>
+      <td>MD5</td>
+      <td>4494b9315b1961b710581146f70d2b65</td>
+    </tr>
+    <tr>
+      <td>SHA256</td><td>d4d37a3b7a4f1e89d94c060e78f7b0e3565150979f2acfc309b1af5ba9ac0b73</td> 
+    </tr>
+    <tr>
+      <td>SHA1</td><td>404636510686a196d09b448f8268052b9da4bb58</td> 
+    </tr>
+    <tr>
+      <td>CRC32</td><td>6cd63a33</td> 
+    </tr>
+    </table>
+  </div>  
+
+  
+  <div id="Notifications" class="tabcontent">
+    <h3>Notifications</h3>
+    <table align="center">
+      <tr>
+        <th>Date</th>
+        <th>Notification</th>
+        <th>Status</th>   
+      </tr>
+      <tr>
+        <td>29/01/23</td>
+        <td class="notification-col">Notification for rental of Medical Laboratory space (365 X 351 cm)  on contract basis. Contact Office for further enquiry</td>
+        <td>Active</td>
+      </tr>
+       <tr>
+        <td>29/01/23</td>
+        <td class="notification-col">Notification for rental of Pharmacy space (375 X 351 cm) on contract basis. Contact Office for further enquiry</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>25/01/23</td>
+        <td class="notification-col">Notification for rental of Consultation Room on contract basis (4hr x 3 slots per day) basis for speciality and superspeciality clinics. Refer to "Time Slots & Room Specifications" given below. Contact Office for further enquiry</td>
+        <td>Active</td>
+      </tr>
+      
+    </table> <br>
+    <h3>Time Slots</h3>
+    <h4>For Speciality or Super Speciality Clinics Only</h4>
+    <table align="center">
+      <tr>
+        <th>Room</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td colspan="8">08:00AM - 12:00PM</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 1</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 2</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 3</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 4</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 5</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 6</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td colspan="8">01:00PM - 04:00PM</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 1</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 2</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 3</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 4</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 5</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 6</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td colspan="8">05:00PM - 10:00PM</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 1</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 2</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 3</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 4</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 5</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <th>Consultation Room 6</th>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+        <td>Available</td>
+      </tr>
+    </table>
+    <h3>Room Specifications</h3>
+    <table align="center">
+      <tr>
+        <th>Rooms</th>
+        <th>Breadth (cm)</th>
+        <th>Length (cm)</th>
+        <th>Height (cm)</th>
+        <th>Area (sq ft)</th>
+      </tr>
+      <tr>
+        <th>Consultation Room 1</th>
+        <td>375</td>
+        <td>353</td>
+        <td>329</td>
+        <td>142.5</td>   
+      </tr>
+      <tr>
+        <th>Consultation Room 2</th>
+        <td>365</td>
+        <td>353</td>
+        <td>329</td>
+        <td>138.7</td>   
+      </tr>
+      <tr>
+        <th>Consultation Room 3</th>
+        <td>375</td>
+        <td>320</td>
+        <td>329</td>
+        <td>129.2</td>   
+      </tr>
+      <tr>
+        <th>Consultation Room 4</th>
+        <td>375</td>
+        <td>323</td>
+        <td>329</td>
+        <td>130.4</td>   
+      </tr>
+      <tr>
+        <th>Consultation Room 5</th>
+        <td>375</td>
+        <td>453</td>
+        <td>329</td>
+        <td>182.9</td>   
+      </tr>
+      <tr>
+        <th>Consultation Room 6</th>
+        <td>365</td>
+        <td>453</td>
+        <td>329</td>
+        <td>178.0</td>   
+      </tr>
+    </table>
+    <h4>Rooms are furnished with table, chair, cupboard, examination table and its stair.</h4>
+    <h4>All rooms have wash basin with rooms 3,4,5,6 having attached bathrooms</h4>
+    <h4>Amble car parking space available</h4>
   </div>
   
- 
-  <div class="tab-content">
-    <p></p>
-    <div class="tabs__tab active" id="tab_1" data-tab-info>      
-        <img class=logo src="cln1mb.png">
-        <h1 class="text">Crescent Clinic</h1>
-      <table align="center">
-        <tr>
-          <td class="about-col" colspan="5">Crescent Clinic is strategically established to address regional imbalances in healthcare services and research. Its established by "Dr Sulaikha I MBBS" with the help of her husband "Dr Hydress U MBBS" and Sons "Dr Ajmal U MBBS MD Paediatrics" and "Dr Haseeb U MBBS" along with suggestions from families and relatives. Together we thrives to deliver quality and affordable healthcare.</td> 
-        </tr>
-      </table>  
-        <h3>Contact Us</h3>
-      <table align="center">
-        <tr>
-          <td>Address</td>
-          <td colspan="4">Crescent Clinic, Chattiparamb <br> Near Capital Mall, Malappuram <br>Kerala Pin 676503</td> 
-         </tr>
-        <tr>
-          <td>Phone</td>
-          <td colspan="4">9400268462</td> 
-        </tr>
-        <tr>
-          <td>Mail</td>
-          <td>clinic.crescent@proton.me</td> 
-        </tr>
-        <tr>
-          <td>PGP Fingerprint</td>
-          <td colspan="4">3AFB FFED DC2B 1992 336F 04BB 32FC 753C 0E06 19E7</td> 
-        </tr>
-        <tr>
-          <td><h5><a href="https://www.google.com/maps/place/10%C2%B059'52.1%22N+76%C2%B005'30.6%22E/@10.9977937,76.0912858,249m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x6b2a1eef3ab26f04!8m2!3d10.9977924!4d76.091833" target="_blank">Jump to Google Maps or scan the QR Code for Geolocation</a></h4></td>
-          <td colspan="4"><img src="loc.png" style="width:20%;height:20%;"></td> 
-        </tr>
-      </table>
-      <h3>Crescent Clinic App</h3>
-      <table align="center">
-        <tr>
-          <td colspan="2"><a href="cc_v0.0.1.apk" download> Download Crescent Clinic Android App Version 0.0.1 Release Date 15-02-2023</td>
-        </tr>
-        <tr>
-          <td colspan="2" style="color:#ff0000">The app can be downloaded only via a browser by visiting <br> https://crescentclinic.github.io/web <br> Verify the authenticity of the downloaded app by matching hash values given below</td>
-        </tr>     
-        <tr>
-          <td>MD5</td>
-          <td>4494b9315b1961b710581146f70d2b65</td>
-        </tr>
-        <tr>
-          <td>SHA256</td><td>d4d37a3b7a4f1e89d94c060e78f7b0e3565150979f2acfc309b1af5ba9ac0b73</td> 
-        </tr>
-        <tr>
-          <td>SHA1</td><td>404636510686a196d09b448f8268052b9da4bb58</td> 
-        </tr>
-        <tr>
-          <td>CRC32</td><td>6cd63a33</td> 
-        </tr>
-      </table>
-    </div>  
-    <div class="tabs__tab" id="tab_2" data-tab-info>
-      <h3>Notifications</h3>
-      <table align="center">
-        <tr>
-          <th>Date</th>
-          <th>Notification</th>
-          <th>Status</th>   
-        </tr>
-        <tr>
-          <td>29/01/23</td>
-          <td class="notification-col">Notification for rental of Medical Laboratory space (365 X 351 cm)  on contract basis. Contact Office for further enquiry</td>
-          <td>Active</td>
-        </tr>
-         <tr>
-          <td>29/01/23</td>
-          <td class="notification-col">Notification for rental of Pharmacy space (375 X 351 cm) on contract basis. Contact Office for further enquiry</td>
-          <td>Active</td>
-        </tr>
-        <tr>
-          <td>25/01/23</td>
-          <td class="notification-col">Notification for rental of Consultation Room on contract basis (4hr x 3 slots per day) basis for speciality and superspeciality clinics. Refer to "Time Slots & Room Specifications" given below. Contact Office for further enquiry</td>
-          <td>Active</td>
-        </tr>
-        
-      </table> <br>
-      <h3>Time Slots</h3>
-      <h4>For Speciality or Super Speciality Clinics Only</h4>
-      <table align="center">
-        <tr>
-          <th>Room</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-          <th>Sunday</th>
-        </tr>
-        <tr>
-          <td colspan="8">08:00AM - 12:00PM</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 1</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 2</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 3</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 4</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 5</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 6</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <td colspan="8">01:00PM - 04:00PM</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 1</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 2</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 3</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 4</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 5</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 6</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <td colspan="8">05:00PM - 10:00PM</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 1</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 2</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 3</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 4</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 5</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <th>Consultation Room 6</th>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-          <td>Available</td>
-        </tr>
-      </table>
-      <h3>Room Specifications</h3>
-      <table align="center">
-        <tr>
-          <th>Rooms</th>
-          <th>Breadth (cm)</th>
-          <th>Length (cm)</th>
-          <th>Height (cm)</th>
-          <th>Area (sq ft)</th>
-        </tr>
-        <tr>
-          <th>Consultation Room 1</th>
-          <td>375</td>
-          <td>353</td>
-          <td>329</td>
-          <td>142.5</td>   
-        </tr>
-        <tr>
-          <th>Consultation Room 2</th>
-          <td>365</td>
-          <td>353</td>
-          <td>329</td>
-          <td>138.7</td>   
-        </tr>
-        <tr>
-          <th>Consultation Room 3</th>
-          <td>375</td>
-          <td>320</td>
-          <td>329</td>
-          <td>129.2</td>   
-        </tr>
-        <tr>
-          <th>Consultation Room 4</th>
-          <td>375</td>
-          <td>323</td>
-          <td>329</td>
-          <td>130.4</td>   
-        </tr>
-        <tr>
-          <th>Consultation Room 5</th>
-          <td>375</td>
-          <td>453</td>
-          <td>329</td>
-          <td>182.9</td>   
-        </tr>
-        <tr>
-          <th>Consultation Room 6</th>
-          <td>365</td>
-          <td>453</td>
-          <td>329</td>
-          <td>178.0</td>   
-        </tr>
-      </table>
-      <h4>Rooms are furnished with table, chair, cupboard, examination table and its stair.</h4>
-      <h4>All rooms have wash basin with rooms 3,4,5,6 having attached bathrooms</h4>
-      <h4>Amble car parking space available</h4>
-    </div>
-    <div class="tabs__tab" id="tab_3" data-tab-info>
-      <h3>Consultation Schedule Test Template</h3>
-      <table align="center">
-        
-          <form name="form1" id="form1" action="/action_page.php">
-            <tr>
-            <td class="align-right-col">
-            Speciality
-            </td>
-            <td class="align-left-col">
-            <select name="subject" id="subject">
-            <option value="" selected="selected">Select Speciality</option>
-            </select>
-            </td>
-            </tr>
-            <tr>
-            <td class="align-right-col">
-            Doctor
-            </td>
-            <td class="align-left-col">
-            <select name="topic" id="topic">
-            <option value="" selected="selected">Please select Doctor</option>
-            </select>
-            </td>
-            </tr>
-            <tr>
-            <td class="align-right-col">
-            Schedule
-            </td>
-            <td class="align-left-col">
-            <select name="chapter" id="chapter">
-            <option value="" selected="selected">Click To View Schedule</option>
-            </select>
-            </td>
-            </tr>
-
-          </form>
-        
-      </table>
-      <p></p>
+  <div id="OP Time" class="tabcontent">
+    <h3>Consultation Schedule Test Template</h3>
+    <table align="center">
       
-      <table align="center">
-        <tr>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-          <th>Sunday</th>
-        </tr>
-        <tr>
-          <td colspan="7">08:00AM - 12:00PM</td>
-        </tr>
-        <tr>
-          <td>Speciality 1</td>
-          <td>Speciality 2</td>
-          <td>Speciality 3</td>
-          <td>Speciality 4</td>
-          <td>Speciality 5</td>
-          <td>Speciality 6</td>
-          <td>Speciality 7</td>    
-        </tr>
-        <tr>
-          <td>Doc 1</td>
-          <td>Doc 2</td>
-          <td>Doc 3</td>
-          <td>Doc 4</td>
-          <td>Doc 5</td>
-          <td>Doc 6</td> 
-          <td>Doc 7</td>   
-        </tr>
-        <tr>
-          <td colspan="7">01:00PM - 04:00PM</td>
-        </tr>
-        <tr>
-          <td>Speciality 1</td>
-          <td>Speciality 2</td>
-          <td>Speciality 3</td>
-          <td>Speciality 4</td>
-          <td>Speciality 5</td>
-          <td>Speciality 6</td>
-          <td>Speciality 7</td>    
-        </tr>
-        <tr>
-          <td>Doc 1</td>
-          <td>Doc 2</td>
-          <td>Doc 3</td>
-          <td>Doc 4</td>
-          <td>Doc 5</td>
-          <td>Doc 6</td> 
-          <td>Doc 7</td>   
-        </tr>
-        <tr>
-          <td colspan="7">05:00PM - 10:00PM</td>
-        </tr>
-        <tr>
-          <td>Speciality 1</td>
-          <td>Speciality 2</td>
-          <td>Speciality 3</td>
-          <td>Speciality 4</td>
-          <td>Speciality 5</td>
-          <td>Speciality 6</td>
-          <td>Speciality 7</td>    
-        </tr>
-        <tr>
-          <td>Doc 1</td>
-          <td>Doc 2</td>
-          <td>Doc 3</td>
-          <td>Doc 4</td>
-          <td>Doc 5</td>
-          <td>Doc 6</td> 
-          <td>Doc 7</td>   
-        </tr>        
-      </table>
-    </div>
-    <div class="tabs__tab" id="tab_4" data-tab-info>
-      <h2>Medical Laboratory services</h2>
-      <h3>Tests Available</h3>
-      <table align="center">
-        <tr>
-          <th>Tests</th>          
-          <th>Category</th>
-          <th>Inlab</th>
-        </tr>
-      </table>
+        <form name="form1" id="form1" action="/action_page.php">
+          <tr>
+          <td class="align-right-col">
+          Speciality
+          </td>
+          <td class="align-left-col">
+          <select name="subject" id="subject">
+          <option value="" selected="selected">Select Speciality</option>
+          </select>
+          </td>
+          </tr>
+          <tr>
+          <td class="align-right-col">
+          Doctor
+          </td>
+          <td class="align-left-col">
+          <select name="topic" id="topic">
+          <option value="" selected="selected">Please select Doctor</option>
+          </select>
+          </td>
+          </tr>
+          <tr>
+          <td class="align-right-col">
+          Schedule
+          </td>
+          <td class="align-left-col">
+          <select name="chapter" id="chapter">
+          <option value="" selected="selected">Click To View Schedule</option>
+          </select>
+          </td>
+          </tr>
 
-    </div>  
-    <div class="tabs__tab" id="tab_5" data-tab-info>
-      <h2>Pharmacy</h2>
-      <h3>Drugs Available</h3>
-      <table align="center">
-        <tr>
-          <th>Drug Name</th>
-          <th>Formulation</th>          
-          <th>Route</th>
-          <th>Dose</th>
-          <th>Company</th>
-        </tr>
-      </table>
+        </form>
+      
+    </table>
+    <p></p>
+    
+    <table align="center">
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td colspan="7">08:00AM - 12:00PM</td>
+      </tr>
+      <tr>
+        <td>Speciality 1</td>
+        <td>Speciality 2</td>
+        <td>Speciality 3</td>
+        <td>Speciality 4</td>
+        <td>Speciality 5</td>
+        <td>Speciality 6</td>
+        <td>Speciality 7</td>    
+      </tr>
+      <tr>
+        <td>Doc 1</td>
+        <td>Doc 2</td>
+        <td>Doc 3</td>
+        <td>Doc 4</td>
+        <td>Doc 5</td>
+        <td>Doc 6</td> 
+        <td>Doc 7</td>   
+      </tr>
+      <tr>
+        <td colspan="7">01:00PM - 04:00PM</td>
+      </tr>
+      <tr>
+        <td>Speciality 1</td>
+        <td>Speciality 2</td>
+        <td>Speciality 3</td>
+        <td>Speciality 4</td>
+        <td>Speciality 5</td>
+        <td>Speciality 6</td>
+        <td>Speciality 7</td>    
+      </tr>
+      <tr>
+        <td>Doc 1</td>
+        <td>Doc 2</td>
+        <td>Doc 3</td>
+        <td>Doc 4</td>
+        <td>Doc 5</td>
+        <td>Doc 6</td> 
+        <td>Doc 7</td>   
+      </tr>
+      <tr>
+        <td colspan="7">05:00PM - 10:00PM</td>
+      </tr>
+      <tr>
+        <td>Speciality 1</td>
+        <td>Speciality 2</td>
+        <td>Speciality 3</td>
+        <td>Speciality 4</td>
+        <td>Speciality 5</td>
+        <td>Speciality 6</td>
+        <td>Speciality 7</td>    
+      </tr>
+      <tr>
+        <td>Doc 1</td>
+        <td>Doc 2</td>
+        <td>Doc 3</td>
+        <td>Doc 4</td>
+        <td>Doc 5</td>
+        <td>Doc 6</td> 
+        <td>Doc 7</td>   
+      </tr>        
+    </table>
+  </div>
 
-    </div>
+  <div id="Medical Lab" class="tabcontent">
+    <h2>Medical Laboratory services</h2>
+    <h3>Tests Available</h3>
+    <table align="center">
+      <tr>
+        <th>Tests</th>          
+        <th>Category</th>
+        <th>Inlab</th>
+      </tr>
+    </table>
+  </div>
 
+  <div id="Pharmacy" class="tabcontent">
+    <h2>Pharmacy</h2>
+    <h3>Drugs Available</h3>
+    <table align="center">
+      <tr>
+        <th>Drug Name</th>
+        <th>Formulation</th>          
+        <th>Route</th>
+        <th>Dose</th>
+        <th>Company</th>
+      </tr>
+    </table>
   </div>
   <p></p>
   <p></p>
@@ -520,91 +526,5 @@
     <h5>&copy; 2023 Crescent Clinic. All Rights Reserved</h5> 
   </div>  
 </footer>
-<script type="text/javascript">
-  const tabs = document.querySelectorAll('[data-tab-value]')
-  const tabInfos = document.querySelectorAll('[data-tab-info]')
-
-  tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-          const target = document
-              .querySelector(tab.dataset.tabValue);
-
-          tabInfos.forEach(tabInfo => {
-              tabInfo.classList.remove('active')
-          })
-          target.classList.add('active');
-      })
-  })
-
-  var subjectObject = {
-  "Pulmonary Medicine": {
-    "Doc 1": ["Day 1 Time 1", "Day 3 Time 2"]
-  },
-  "Dermatology": {
-    "Doc 2": ["Day 2 Time 1", "Day 4 Time 2"]
-  },
-  "Internal Medicine": {
-    "Doc 3": ["Day 3 Time 1", "Day 5 Time 2"]
-  },
-  "Otorhinolaryngology": {
-    "Doc 4": ["Day 4 Time 1", "Day 6 Time 2"]
-  },
-  "Paediatrics": {
-    "Doc 5": ["Day 5 Time 1", "Day 7 Time 3"]
-  },
-  "Cardiology": {
-    "Doc 6": ["Day 6 Time 1", "Day 1 Time 3"]
-  },
-  "Neurology": {
-    "Doc 7": ["Day 7 Time 1", "Day 2 Time 3"]
-  },
-  "Physical Medicine Rehabilitation": {
-    "Doc 8": ["Day 1 Time 2", "Day 3 Time 3"]
-  },
-  "General Surgery": {
-    "Doc 9": ["Day 2 Time 2", "Day 4 Time 3"]
-  },
-}
-window.onload = function() {
-  var subjectSel = document.getElementById("subject");
-  var topicSel = document.getElementById("topic");
-  var chapterSel = document.getElementById("chapter");
-  for (var x in subjectObject) {
-    subjectSel.options[subjectSel.options.length] = new Option(x, x);
-  }
-  subjectSel.onchange = function() {
-    //empty Chapters- and Topics- dropdowns
-    chapterSel.length = 1;
-    topicSel.length = 1;
-    //display correct values
-    for (var y in subjectObject[this.value]) {
-      topicSel.options[topicSel.options.length] = new Option(y, y);
-    }
-  }
-  topicSel.onchange = function() {
-    //empty Chapters dropdown
-    chapterSel.length = 1;
-    //display correct values
-    var z = subjectObject[subjectSel.value][this.value];
-    for (var i = 0; i < z.length; i++) {
-      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-    }
-  }
-}
-
-
-var datetime = new Date();
-console.log(datetime);
-document.getElementById("time").textContent = datetime; //it will print on html page
-
-
-function refreshTime() {
-  const timeDisplay = document.getElementById("time");
-  const dateString = new Date().toLocaleString('en-us', {weekday:"long", day:"numeric", month:"short", year:"numeric", hour:"numeric", minute:"numeric", second:"numeric"});
-  timeDisplay.textContent = dateString;
-}
-  setInterval(refreshTime, 1000);
-
-</script> 
 </body>
 </html>
