@@ -1,0 +1,213 @@
+h1  {
+    font-family: sans-serif;
+    font-size: 4vw;
+  }
+
+h2  {
+    font-family: sans-serif;
+    font-size: 3vw;
+  }
+
+h3  {
+    font-family: sans-serif;
+    font-size: 2.5vw;
+  }
+
+h4  {
+    font-family: sans-serif;
+    font-size: 2vw;
+  }
+
+h5  {
+    font-family: sans-serif;
+    font-size: 1vw;
+  }
+
+h6  {
+    font-family: sans-serif;
+    font-size: 0.8vw;
+  }
+
+p   {
+    font-family: courier;
+    font-size: 1vw;
+  }
+
+div {
+    text-align: center;
+    align-items: center;
+  }
+
+table {
+    border: 2px solid black;
+    border-radius: 10px;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 100%;
+    padding: 5px;
+    min-width: 90%;
+    max-width: 90%;
+  }  
+td {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 100%;
+    padding: 5px;
+  }  
+th {
+  border: 2px solid black;
+    background: rgb(153, 153, 151);
+    border-radius: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 100%;
+    padding: 5px;
+  }
+
+body {
+  background: rgb(255, 255, 255);
+}
+      
+   
+
+
+.about-table {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 100%;
+  padding: 5px;
+  min-width: 90%;
+  max-width: 90%;
+}
+    
+.about-col {
+  border: 0px solid black;
+  border-radius: 10px;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 100%;
+  padding: 5px;
+}
+
+.notification-col {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 100%;
+  padding: 5px;
+}
+
+.not-available {
+  background: rgb(23, 154, 100);
+}
+
+.align-right-col {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: right;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 100%;
+  padding: 5px;
+}
+
+.align-left-col {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 100%;
+  padding: 5px;
+}
+
+.logo {
+  width:10%;
+  height:auto;
+}
+.datetime {
+  text-align: center;
+  font-size: 100%;
+  padding: 5px;
+}
+
+.align-left-col-noborder {
+  border: 0px ;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col-noborder {
+  border: 0px ;
+  text-align: center;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+     
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 2px solid #000000;
+  background-color: rgb(153,153,151);
+  border-radius: 10px;
+  width: 100%;
+  box-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: rgb(153,153,151);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 5px;
+  font-family: sans-serif;
+  font-weight: bolder;  
+  font-size: 100%;  
+  transition: 0.3s;
+  width:20%
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border: none;
+  width: 100%;
+  animation: fadeEffect 0.5s; /* Fading effect takes 1 second */
+}
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

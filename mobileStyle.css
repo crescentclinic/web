@@ -1,0 +1,212 @@
+h1  {
+    font-family: sans-serif;
+    font-size: 6vw;
+  }
+
+h2  {
+    font-family: sans-serif;
+    font-size: 5vw;
+  }
+
+h3  {
+    font-family: sans-serif;
+    font-size: 4vw;
+  }
+
+h4  {
+    font-family: sans-serif;
+    font-size: 3vw;
+  }
+
+h5  {
+    font-family: sans-serif;
+    font-size: 2vw;
+  }
+
+h6  {
+    font-family: sans-serif;
+    font-size: 1vw;
+  }
+
+p   {
+    font-family: courier;
+    font-size: 2vw;
+  }
+
+div {
+    text-align: center;
+    align-items: center;
+  }
+
+table {
+    border: 0.5vw solid black;
+    border-radius: 2vw;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 2vw;
+    padding: 0.5vw;
+    min-width: 90vw;
+    max-width: 90vw;
+  }
+
+td {
+    border: 0.5vw solid black;
+    border-radius: 2vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2vw;
+    padding: 0.5vw;
+  }
+
+th {
+    border: 0.5vw solid black;
+    background: rgb(153,153,151);
+    border-radius: 2vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2vw;
+    padding: 0.5vw;
+  }     
+
+body {
+  background: rgb(255, 255, 255);
+ }
+      
+
+.about-table {
+  border: 0.5vw solid black;
+  border-radius: 2vw;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding: 0.5vw;
+  min-width: 90vw;
+  max-width: 90vw;
+}
+    
+.about-col {
+  border: 0vw solid black;
+  border-radius: 2vw;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+.notification-col {
+  border: 0.5vw solid black;
+  border-radius: 2vw;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+.not-available {
+  background: rgb(23, 154, 100);
+}
+
+.align-right-col {
+  border: 0.5vw solid black;
+  border-radius: 2vw;
+  text-align: right;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+.align-left-col {
+  border: 0.5vw solid black;
+  border-radius: 2vw;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+.logo {
+  width:20%;
+  height:auto;
+}
+    
+.datetime {
+  text-align: center;
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+.align-left-col-noborder {
+  border: 0vw ;
+  text-align: left;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.col-noborder {
+  border: 0vw ;
+  text-align: center;
+  align-content: stretch; 
+  font-family: sans-serif;
+  font-size: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}    
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 0.5vw solid #000000;
+  background-color: rgb(153,153,151);
+  border-radius: 2vw;
+  width: 90vw;
+  box-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: rgb(153,153,151);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5vw 0.5vw;
+  font-size: 2vw;
+  font-family: sans-serif;
+  font-weight: bolder;  
+  transition: 0.3s;
+  width:20%
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border: none;
+  width: 100%;
+  animation: fadeEffect 0.5s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+   
